@@ -5,7 +5,7 @@ Documentation=man:syslog-ng(8)
 [Service]
 User=root
 Type=forking
-ExecStart=/bin/sh /root/cryptocurrency/miners/ewbf/ewbf.sh
+ExecStart=/bin/sh /opt/mine/root/cryptocurrency/miners/ewbf/ewbf.sh
 StandardOutput=null
 Restart=always
 RestartSec=3
