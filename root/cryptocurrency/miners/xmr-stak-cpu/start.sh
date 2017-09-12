@@ -2,4 +2,4 @@
 
 _DIR=/opt/mine/root/cryptocurrency/miners/xmr-stak-cpu
 sysctl -w vm.nr_hugepages=128 
-$_DIR/xmr-stak-cpu $_DIR/config.txt
+tmux new-session -d -s xmr "$_DIR/xmr-stak-cpu $_DIR/config.txt"
