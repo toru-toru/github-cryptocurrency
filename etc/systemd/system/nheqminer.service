@@ -6,6 +6,7 @@ Documentation=man:syslog-ng(8)
 User=root
 Type=forking
 ExecStart=/bin/sh /root/cryptocurrency/miners/nheqminer/nheqminer.sh
+PIDFile=/var/run/nheqminer.pid
 StandardOutput=null
 Restart=always
 RestartSec=3

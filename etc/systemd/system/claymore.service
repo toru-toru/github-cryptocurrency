@@ -6,6 +6,7 @@ Documentation=man:syslog-ng(8)
 User=root
 Type=forking
 ExecStart=/bin/sh /opt/mine/root/cryptocurrency/miners/claymore/claymore.sh
+PIDFile=/var/run/claymore.pid
 StandardOutput=null
 Restart=always
 RestartSec=3
