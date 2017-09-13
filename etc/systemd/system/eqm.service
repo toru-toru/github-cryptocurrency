@@ -5,7 +5,7 @@ Documentation=man:syslog-ng(8)
 [Service]
 User=root
 Type=forking
-ExecStart=/bin/sh /root/cryptocurrency/miners/eqm/eqm.sh
+ExecStart=/bin/sh /opt/mine/root/cryptocurrency/miners/eqm/eqm.sh
 PIDFile=/var/run/eqm.pid
 StandardOutput=null
 Restart=always
