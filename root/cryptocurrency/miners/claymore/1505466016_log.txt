@@ -1,0 +1,169 @@
+18:00:16:092	4d6f7740	args: -epool stratum+tcp://daggerhashimoto.jp.nicehash.com:3353 -ewal 1P2gMDfpGZZgDhBedGs18g8zFq9c6FpdU1 -epsw x -esm 3 -allpools 1 -estale 0 -dpool stratum+tcp://decred.jp.nicehash.com:3354 -dwal 1P2gMDfpGZZgDhBedGs18g8zFq9c6FpdU1 
+18:00:16:092	4d6f7740	
+18:00:16:092	4d6f7740	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+18:00:16:092	4d6f7740	บ        Claymore's Dual ETH + DCR/SC/LBC GPU Miner v7.3         บ
+18:00:16:092	4d6f7740	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+18:00:16:092	4d6f7740	
+18:00:16:292	4d6f7740	ETH: 6 pools are specified
+18:00:16:292	4d6f7740	Main Ethereum pool is daggerhashimoto.jp.nicehash.com:3353
+18:00:16:292	4d6f7740	DCR: 6 pools are specified
+18:00:16:292	4d6f7740	Main Decred pool is decred.jp.nicehash.com:3354
+18:00:16:316	4d6f7740	OpenCL platform: NVIDIA CUDA
+18:00:16:316	4d6f7740	AMD OpenCL platform not found 
+18:00:16:321	4d6f7740	CUDA initializing...
+
+18:00:16:322	4d6f7740	NVIDIA Cards available: 1 
+18:00:16:322	4d6f7740	CUDA Driver Version/Runtime Version: 9.0/8.0
+18:00:16:322	4d6f7740	GPU #0: GeForce GTX 1050 Ti, 4030 MB available, 6 compute units, capability: 6.1
+
+18:00:16:322	4d6f7740	Total cards: 1 
+18:00:16:423	4d6f7740	No AMD cards in the list, ADL library will not be used.
+18:00:16:424	4d6f7740	NVML version: 9.384.69
+18:00:16:441	3222a700	ETH: Stratum - connecting to 'daggerhashimoto.jp.nicehash.com' <161.202.68.88> port 3353
+18:00:16:446	3222a700	send: {"id": 1, "method": "mining.subscribe", "params": ["MinerName/1.0.0", "EthereumStratum/1.0.0"]}
+
+18:00:16:446	3222a700	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+18:00:16:446	3222a700	send: {"id": 2, "method": "mining.authorize", "params": ["1P2gMDfpGZZgDhBedGs18g8zFq9c6FpdU1","x"]}
+
+18:00:16:446	3222a700	ETH: Stratum - Connected (daggerhashimoto.jp.nicehash.com:3353)
+18:00:16:530	4d6f7740	DUAL MINING MODE ENABLED: ETHEREUM+DECRED
+18:00:16:530	4d6f7740	ETH: nicehash stratum mode
+18:00:16:530	4d6f7740	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+18:00:16:530	4d6f7740	Watchdog enabled
+18:00:16:530	4d6f7740	Remote management is enabled on port 3333
+18:00:16:530	4d6f7740	
+18:00:16:539	3161f700	 DCR: Stratum - connecting to 'decred.jp.nicehash.com' <161.202.68.88> port 3354
+18:00:16:543	3161f700	send: {"id": 1, "method": "mining.subscribe", "params": ["lbc 1.0"]}
+
+18:00:16:543	3161f700	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+18:00:16:543	3161f700	send: {"id": 2, "method": "mining.authorize", "params": ["1P2gMDfpGZZgDhBedGs18g8zFq9c6FpdU1",""]}
+
+18:00:16:543	3161f700	 DCR: Stratum - Connected (decred.jp.nicehash.com:3354)
+18:00:16:587	3222a700	got 119 bytes
+18:00:16:587	3222a700	buf: {"id":1,"error":null,"result":[["mining.notify","399f7349070815e2be0de130d6101e5a","EthereumStratum/1.0.0"],"d4f64f"]}
+
+18:00:16:587	3222a700	parse packet: 118
+18:00:16:587	3222a700	new buf size: 0
+18:00:16:664	3161f700	got 101 bytes
+18:00:16:664	3161f700	buf: {"id":1,"error":null,"result":[["mining.notify","a5907083bad410b411c8fa3652002852"],"4a3a50daa5",3]}
+
+18:00:16:664	3161f700	parse packet: 100
+18:00:16:664	3161f700	new buf size: 0
+18:00:16:698	3222a700	got 36 bytes
+18:00:16:698	3222a700	buf: {"id":2,"result":true,"error":null}
+
+18:00:16:698	3222a700	parse packet: 35
+18:00:16:698	3222a700	ETH: Authorized
+18:00:16:698	3222a700	new buf size: 0
+18:00:16:718	3222a700	got 302 bytes
+18:00:16:718	3222a700	buf: {"id":null,"method":"mining.set_difficulty","params":[0.5]}
+{"params":["00000002ad15e963","a91b532dbccf95bab5809616107474f25559efebc2974e2b22acae346634b49a","4f6621a52944542f759db6e4e2046933dba707e475e2f927fcfc958c14166361",true],"id":null,"method":"mining.notify"}
+{"id":5,"result":true,"error":null}
+
+18:00:16:718	3222a700	parse packet: 59
+18:00:16:718	3222a700	remove first packet 242
+18:00:16:718	3222a700	new buf size: 242
+18:00:16:718	3222a700	parse packet: 205
+18:00:16:718	3222a700	eth: job changed
+18:00:16:718	3222a700	remove first packet 36
+18:00:16:718	3222a700	new buf size: 36
+18:00:16:718	3222a700	parse packet: 35
+18:00:16:718	3222a700	new buf size: 0
+18:00:16:734	32a2b700	Setting DAG epoch #142...
+18:00:16:798	3161f700	got 36 bytes
+18:00:16:798	3161f700	buf: {"id":2,"result":true,"error":null}
+
+18:00:16:798	3161f700	parse packet: 35
+18:00:16:798	3161f700	 DCR: Authorized
+18:00:16:798	3161f700	new buf size: 0
+18:00:16:808	3161f700	got 499 bytes
+18:00:16:808	3161f700	buf: {"id":null,"method":"mining.set_difficulty","params":[4]}
+{"params":["00000002ac47fcac","504060ff0130b42f8615c457f32fae157fde10e799c58e6a0000007600000000","670a24837c9b257bd878da822806dfd669967775c749f8c1e25a96206a6a9c9e6fd6a73605d0f8b1abb79722f36f3e1e28e0a36eb4c54b0413df3530a99a14de0100dd191c049c2805000600f29f00005bdc001a93148087010000009a9302002e1a00007c96bb5900000000","04000000",[],"04000000","1a00dc5b","59bb967c",true],"id":null,"method":"mining.notify"}
+{"id":5,"result":true,"error":null}
+
+18:00:16:808	3161f700	parse packet: 57
+18:00:16:808	3161f700	remove first packet 441
+18:00:16:808	3161f700	new buf size: 441
+18:00:16:808	3161f700	parse packet: 404
+18:00:16:808	3161f700	remove first packet 36
+18:00:16:808	3161f700	new buf size: 36
+18:00:16:808	3161f700	parse packet: 35
+18:00:16:808	3161f700	new buf size: 0
+18:00:20:158	32a2b700	Setting DAG epoch #142 for GPU #0
+18:00:20:158	32a2b700	Create GPU buffer for GPU #0
+18:00:31:305	3222a700	got 206 bytes
+18:00:31:305	3222a700	buf: {"params":["00000002ad15f760","a91b532dbccf95bab5809616107474f25559efebc2974e2b22acae346634b49a","d3cf3e741a01510ae11087f75af40c18fd1438d7a1e633d22da03c98be990272",true],"id":null,"method":"mining.notify"}
+
+18:00:31:305	3222a700	parse packet: 205
+18:00:31:305	3222a700	eth: job changed
+18:00:31:305	3222a700	new buf size: 0
+18:00:31:305	3222a700	ETH: 09/15/17-18:00:31 - New job from daggerhashimoto.jp.nicehash.com:3353
+18:00:31:305	3222a700	target: 0x00000001fffe0000 (diff: 2147MH), epoch #142
+18:00:31:305	3222a700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:00:31:305	3222a700	ETH: GPU0 0.000 Mh/s
+18:00:31:305	3222a700	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+18:00:31:305	3222a700	 DCR: GPU0 0.000 Mh/s
+18:00:33:154	32a2b700	GPU 0 DAG creation time - 12981 ms
+18:00:33:154	32a2b700	Setting DAG epoch #142 for GPU #0 done
+18:00:34:447	3222a700	got 206 bytes
+18:00:34:447	3222a700	buf: {"params":["00000002ad166697","a91b532dbccf95bab5809616107474f25559efebc2974e2b22acae346634b49a","209e1f91bd9207b5f163ce25fb39266ebfeb5a996f50050ead336f8ac5884ff8",true],"id":null,"method":"mining.notify"}
+
+18:00:34:447	3222a700	parse packet: 205
+18:00:34:447	3222a700	eth: job changed
+18:00:34:447	3222a700	new buf size: 0
+18:00:34:447	3222a700	ETH: 09/15/17-18:00:34 - New job from daggerhashimoto.jp.nicehash.com:3353
+18:00:34:447	3222a700	target: 0x00000001fffe0000 (diff: 2147MH), epoch #142
+18:00:34:447	3222a700	ETH - Total Speed: 11.720 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:00:34:447	3222a700	ETH: GPU0 11.720 Mh/s
+18:00:34:447	3222a700	 DCR - Total Speed: 117.198 Mh/s, Total Shares: 0, Rejected: 0
+18:00:34:447	3222a700	 DCR: GPU0 117.198 Mh/s
+18:00:35:740	3161f700	got 406 bytes
+18:00:35:740	3161f700	buf: {"params":["00000002ac48170a","504060ff0130b42f8615c457f32fae157fde10e799c58e6a0000007600000000","670a24837c9b257bd878da822806dfd669967775c749f8c1e25a96206a6a9c9e6fd6a73605d0f8b1abb79722f36f3e1e28e0a36eb4c54b0413df3530a99a14de0100dd191c049c2805000600f29f00005bdc001a93148087010000009a9302002e1a0000b396bb5900000000","04000000",[],"04000000","1a00dc5b","59bb96b3",false],"id":null,"method":"mining.notify"}
+
+18:00:35:740	3161f700	parse packet: 405
+18:00:35:740	3161f700	new buf size: 0
+18:00:35:740	3161f700	 DCR: 09/15/17-18:00:35 - New job from decred.jp.nicehash.com:3354
+18:00:35:740	3161f700	target: 0x000000003fffc000 (diff: 17GH), block #168858
+18:00:36:719	3222a700	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xb1195f", "0x0000000000000000000000000000000000000000000000000000000008edc1fb"]}
+
+18:00:46:534	4d6f7740	GPU0 t=53C fan=48%
+18:00:46:534	4d6f7740	em hbt: 1, dm hbt: 1, fm hbt: 65, 
+18:00:46:534	4d6f7740	watchdog - thread 0, hb time 51
+18:00:46:534	4d6f7740	watchdog - thread 1, hb time 1
+18:00:56:720	3222a700	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xb2bc0c", "0x0000000000000000000000000000000000000000000000000000000008edc1fb"]}
+
+18:01:05:854	3222a700	got 206 bytes
+18:01:05:854	3222a700	buf: {"params":["00000002ad16a615","a91b532dbccf95bab5809616107474f25559efebc2974e2b22acae346634b49a","fde4274d98831d30d8aa216d4c47f457c50ea7703fb72e27fdd743b8be1090c5",true],"id":null,"method":"mining.notify"}
+
+18:01:05:854	3222a700	parse packet: 205
+18:01:05:854	3222a700	eth: job changed
+18:01:05:854	3222a700	new buf size: 0
+18:01:05:854	3222a700	ETH: 09/15/17-18:01:05 - New job from daggerhashimoto.jp.nicehash.com:3353
+18:01:05:854	3222a700	target: 0x00000001fffe0000 (diff: 2147MH), epoch #142
+18:01:05:854	3222a700	ETH - Total Speed: 11.710 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+18:01:05:854	3222a700	ETH: GPU0 11.710 Mh/s
+18:01:05:854	3222a700	 DCR - Total Speed: 117.100 Mh/s, Total Shares: 0, Rejected: 0
+18:01:05:854	3222a700	 DCR: GPU0 117.100 Mh/s
+18:01:16:537	4d6f7740	GPU0 t=59C fan=51%
+18:01:16:537	4d6f7740	em hbt: 1, dm hbt: 1, fm hbt: 52, 
+18:01:16:537	4d6f7740	watchdog - thread 0, hb time 31
+18:01:16:537	4d6f7740	watchdog - thread 1, hb time 81
+18:01:16:720	3222a700	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xb2c6f4", "0x0000000000000000000000000000000000000000000000000000000008edc1fb"]}
+
+18:01:18:687	3222a700	got 206 bytes
+18:01:18:687	3222a700	buf: {"params":["00000002ad1702b4","a91b532dbccf95bab5809616107474f25559efebc2974e2b22acae346634b49a","c0e9ce020e49509389ca894b0e418c8bc316ab568d24707e0e44895edb454805",true],"id":null,"method":"mining.notify"}
+
+18:01:18:687	3222a700	parse packet: 205
+18:01:18:687	3222a700	eth: job changed
+18:01:18:687	3222a700	new buf size: 0
+18:01:18:688	3222a700	ETH: 09/15/17-18:01:18 - New job from daggerhashimoto.jp.nicehash.com:3353
+18:01:18:688	3222a700	target: 0x00000001fffe0000 (diff: 2147MH), epoch #142
+18:01:18:688	3222a700	ETH - Total Speed: 11.714 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+18:01:18:688	3222a700	ETH: GPU0 11.714 Mh/s
+18:01:18:688	3222a700	 DCR - Total Speed: 117.142 Mh/s, Total Shares: 0, Rejected: 0
+18:01:18:688	3222a700	 DCR: GPU0 117.142 Mh/s
+18:01:22:453	3322c700	DCR: weak share, skip
+18:01:28:046	32a2b700	DCR: weak share, skip
+18:01:28:455	4d6f7740	Quit signal received...
