@@ -1,0 +1,15 @@
+[Unit]
+Description=Start CCMiner nero
+Documentation=man:syslog-ng(8)
+
+[Service]
+User=root
+Type=forking
+ExecStart=/bin/sh /opt/mine/root/cryptocurrency/miners/ccminer/nero.sh
+PIDFile=/var/run/ccminer.pid
+StandardOutput=null
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
